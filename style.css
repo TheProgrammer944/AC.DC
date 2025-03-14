@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Red Hat Display', sans-serif;
     text-align: center;
@@ -14,21 +15,26 @@ header {
     color: white;
 }
 
-.big-title {
-    font-size: 3em;
-}
-
-h1, h2, h3 {
+/* Proper Black Outline Effect */
+.outlined-text {
     font-family: 'The Seasons', serif;
-    color: #FFD700;
-    text-shadow: 3px 3px 4px black; /* Black outline */
-    font-size: 2.5em;
+    color: #FFD700; /* Gold */
+    font-size: 2.5em; /* Bigger text */
+    -webkit-text-stroke: 2px black; /* Creates a solid black outline */
 }
 
-.new-tag {
-    font-size: 2em;
+.big-title {
+    font-size: 3.5em; /* Made AC/DC Productions bigger */
 }
 
+/* About Us Section */
+.about-text {
+    font-size: 1.4em;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Show List Styling */
 .show-list {
     display: flex;
     justify-content: space-around;
@@ -44,10 +50,33 @@ h1, h2, h3 {
     text-align: center;
 }
 
-.big-button {
-    font-size: 1.5em;
+.show img {
+    width: 100%;
 }
 
+.price {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* New Tag for Sci-Fi Show */
+.new-tag {
+    font-size: 2em;
+}
+
+/* Buttons */
+.big-button {
+    background-color: #870000;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em; /* Bigger buttons */
+    margin-top: 10px;
+}
+
+/* Booking Section with Dropdown Animation */
 .animated-dropdown {
     display: none;
     opacity: 0;
@@ -61,6 +90,7 @@ h1, h2, h3 {
     transform: translateY(0);
 }
 
+/* Ticket Styling */
 .ticket-container {
     display: flex;
     align-items: center;
@@ -70,4 +100,18 @@ h1, h2, h3 {
 
 .ticket-container img {
     width: 150px;
+}
+
+/* Footer Section */
+footer {
+    background: #870000;
+    padding: 30px;
+    color: white;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #FFD700;
+    font-weight: bold;
+    text-decoration: none;
 }
