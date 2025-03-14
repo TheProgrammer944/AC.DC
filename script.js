@@ -1,4 +1,4 @@
-function calculateTotal() {
+function calculatetotal() {
     let date = document.getElementById("date").value;
     let time = document.getElementById("time").value;
     let adults = parseInt(document.getElementById("adults").value);
