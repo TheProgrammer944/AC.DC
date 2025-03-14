@@ -4,37 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AC/DC Productions</title>
+
+    <!-- Link to External CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=The+Seasons:wght@700&family=Red+Hat+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- HEADER WITH LOGO -->
     <header>
+        <!-- Replace 'YOUR_LOGO_LINK' with your actual image URL -->
         <img src="https://i.ibb.co/dT6cQPQ/logo.png" alt="AC/DC Productions Logo" class="logo">
         <h1>AC/DC Productions</h1>
         <p class="tagline">It's Your Choice</p>
     </header>
 
+    <!-- ABOUT SECTION -->
     <section id="about">
         <h2>About Us</h2>
         <p>Our plays are interactive! The audience votes for the next action.</p>
     </section>
 
+    <!-- SHOW LISTING -->
     <section id="shows">
         <h2>Upcoming Shows</h2>
         <div class="show-list">
-            <div class="show" onclick="openBooking('The Mystery Night', 'mystery.jpg')">
-                <img src="mystery.jpg" alt="Mystery Show">
+            <!-- Replace 'SHOW_IMAGE_LINK' with your actual image URL -->
+            <div class="show" onclick="openBooking('The Mystery Night', 'images/mystery.jpg')">
+                <img src="images/mystery.jpg" alt="Mystery Show">
                 <h3>The Mystery Night</h3>
                 <p>A thrilling experience where you decide the fate of the characters.</p>
             </div>
-            <div class="show" onclick="openBooking('Kids Adventure', 'kids.jpg')">
-                <img src="kids.jpg" alt="Kids Adventure">
+            <div class="show" onclick="openBooking('Kids Adventure', 'images/kids.jpg')">
+                <img src="images/kids.jpg" alt="Kids Adventure">
                 <h3>Kids Adventure</h3>
                 <p>A fun and interactive journey for children!</p>
             </div>
         </div>
     </section>
 
+    <!-- BOOKING SECTION -->
     <section id="booking" class="hidden">
         <h2>Book Your Tickets</h2>
         <p id="selected-show"></p>
@@ -63,11 +74,14 @@
         </div>
     </section>
 
+    <!-- YOUTUBE VIDEO EMBED -->
     <section id="video">
         <h2>Watch Our Advertisement</h2>
+        <!-- Replace 'YOUR_VIDEO_ID' with your actual YouTube Video ID -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
     </section>
 
+    <!-- CONTACT SECTION -->
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Email: <a href="mailto:ACDC.Productions@protonmail.com">ACDC.Productions@protonmail.com</a></p>
