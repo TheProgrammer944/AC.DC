@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
     font-family: 'Red Hat Display', sans-serif;
     text-align: center;
@@ -8,7 +7,6 @@ body {
     color: black;
 }
 
-/* Header */
 header {
     background-color: #870000;
     padding: 20px;
@@ -16,18 +14,15 @@ header {
     color: white;
 }
 
-h1 {
-    font-family: 'The Seasons', serif;
-    font-size: 2.5em;
-    color: #FFD700; /* Gold */
-}
-
-h2 {
+h1, h2 {
     font-family: 'The Seasons', serif;
     color: #FFD700; /* Gold */
 }
 
-/* Logo */
+.about-text {
+    font-size: 1.2em;
+}
+
 .logo {
     width: 150px;
     height: auto;
@@ -35,64 +30,46 @@ h2 {
     margin: 20px auto;
 }
 
-/* Sections */
 section {
     padding: 20px;
 }
 
-/* Show List */
+/* Shows Styling */
 .show-list {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
+    gap: 40px;
 }
 
 .show {
-    width: 200px;
+    width: 280px;
     background: white;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
-    border: 2px solid #000;
+    border: 3px solid #870000;
+    text-align: center;
 }
 
 .show img {
     width: 100%;
 }
 
-/* Booking Section */
-#booking {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
+.price {
+    font-weight: bold;
+    color: #FFD700;
 }
 
-/* Booking Box */
+/* Booking Section */
 .booking-box {
-    border: 2px solid black;
+    border: 3px solid #870000;
     padding: 10px;
     margin: 10px auto;
     width: 50%;
 }
 
-/* Ticket Box */
 .ticket-box {
-    border: 2px solid black;
+    border: 3px solid #870000;
     padding: 15px;
     background-color: #FFD700;
     color: black;
-}
-
-/* Buttons */
-button {
-    background-color: #870000;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1em;
-}
-
-.hidden {
-    display: none;
 }
