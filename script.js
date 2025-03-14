@@ -4,6 +4,18 @@ function openBooking(title, image) {
 
     let bookingSection = document.getElementById("booking");
     bookingSection.classList.add("active");
+
+    // Get the kids' input field and label
+    let kidsBox = document.querySelector(".booking-box:nth-child(5)"); // Adjust based on structure
+    let kidsInput = document.getElementById("kids");
+
+    // Hide kids' input field if Murder Mystery is selected
+    if (title === "The Mystery Night") {
+        kidsBox.style.display = "none";
+        kidsInput.value = 0; // Reset value to prevent incorrect calculations
+    } else {
+        kidsBox.style.display = "block";
+    }
 }
 
 function calculateTotal() {
