@@ -15,8 +15,8 @@
 
     <!-- HEADER WITH LOGO -->
     <header>
-        <!-- Replace 'YOUR_LOGO_LINK' with your actual image URL -->
-        <img src="https://i.ibb.co/dT6cQPQ/logo.png" alt="AC/DC Productions Logo" class="logo">
+        <!-- Updated logo link -->
+        <img src="https://i.ibb.co/Qv8qqqkx/logo.png" alt="AC/DC Productions Logo" class="logo">
         <h1>AC/DC Productions</h1>
         <p class="tagline">It's Your Choice</p>
     </header>
@@ -31,7 +31,6 @@
     <section id="shows">
         <h2>Upcoming Shows</h2>
         <div class="show-list">
-            <!-- Replace 'SHOW_IMAGE_LINK' with your actual image URL -->
             <div class="show" onclick="openBooking('The Mystery Night', 'images/mystery.jpg')">
                 <img src="images/mystery.jpg" alt="Mystery Show">
                 <h3>The Mystery Night</h3>
@@ -50,18 +49,26 @@
         <h2>Book Your Tickets</h2>
         <p id="selected-show"></p>
         <img id="show-image" src="" alt="Show Image">
-        
-        <label for="date">Choose Date:</label>
-        <input type="date" id="date">
 
-        <label for="time">Choose Time:</label>
-        <input type="time" id="time" min="10:00" max="22:00">
+        <div class="booking-box">
+            <label for="date">Choose Date:</label>
+            <input type="date" id="date">
+        </div>
 
-        <label for="adults">Number of People 13+:</label>
-        <input type="number" id="adults" value="0" min="0">
+        <div class="booking-box">
+            <label for="time">Choose Time:</label>
+            <input type="time" id="time" min="10:00" max="22:00">
+        </div>
 
-        <label for="kids">Number of People Under 13:</label>
-        <input type="number" id="kids" value="0" min="0">
+        <div class="booking-box">
+            <label for="adults">Number of People 13+:</label>
+            <input type="number" id="adults" value="0" min="0">
+        </div>
+
+        <div class="booking-box">
+            <label for="kids">Number of People Under 13:</label>
+            <input type="number" id="kids" value="0" min="0">
+        </div>
 
         <button onclick="calculateTotal()">Calculate Price</button>
         <p id="total-price"></p>
@@ -70,14 +77,16 @@
 
         <div id="ticket" class="hidden">
             <h2>Your Ticket</h2>
-            <p id="ticket-details"></p>
+            <div class="ticket-box">
+                <p id="ticket-details"></p>
+                <p><strong>Booking Code:</strong> <span id="booking-code"></span></p>
+            </div>
         </div>
     </section>
 
     <!-- YOUTUBE VIDEO EMBED -->
     <section id="video">
         <h2>Watch Our Advertisement</h2>
-        <!-- Replace 'YOUR_VIDEO_ID' with your actual YouTube Video ID -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
     </section>
 
