@@ -1,20 +1,23 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     text-align: center;
-    background-color: #ffcc00;
+    background-color: #870000;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #ff5733;
     color: white;
-    padding: 20px;
 }
 
-
+/* Header */
+header {
+    background-color: white; /* Changed to white */
+    padding: 20px;
+    text-align: center;
+    color: #870000;
+}
 
 h1 {
+    font-family: 'The Seasons', serif; /* Updated font */
     font-size: 2.5em;
 }
 
@@ -22,10 +25,20 @@ h1 {
     font-size: 1.2em;
 }
 
+/* Logo */
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Sections */
 section {
     padding: 20px;
 }
 
+/* Show List */
 .show-list {
     display: flex;
     justify-content: center;
@@ -44,19 +57,24 @@ section {
     width: 100%;
 }
 
+/* Booking Section */
 #booking, #ticket {
     display: none;
     background: white;
     padding: 20px;
     border-radius: 10px;
+    color: black;
 }
 
+/* Buttons */
 button {
-    background-color: #ff5733;
-    color: white;
+    background-color: white;
+    color: #870000;
     padding: 10px;
     border: none;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 .hidden {
