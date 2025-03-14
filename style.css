@@ -9,26 +9,24 @@ body {
 
 header {
     background-color: #870000;
-    padding: 30px;
+    padding: 40px;
     text-align: center;
     color: white;
+}
+
+.big-title {
+    font-size: 3em;
 }
 
 h1, h2, h3 {
     font-family: 'The Seasons', serif;
     color: #FFD700;
-    text-shadow: 2px 2px 3px black; /* Black outline effect */
+    text-shadow: 3px 3px 4px black; /* Black outline */
+    font-size: 2.5em;
 }
 
-.about-text {
-    font-size: 1.4em;
-}
-
-.logo {
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
+.new-tag {
+    font-size: 2em;
 }
 
 .show-list {
@@ -38,7 +36,7 @@ h1, h2, h3 {
 }
 
 .show {
-    width: 350px;
+    width: 380px;
     background: white;
     padding: 20px;
     cursor: pointer;
@@ -46,45 +44,30 @@ h1, h2, h3 {
     text-align: center;
 }
 
-.show img {
-    width: 100%;
-}
-
-.price {
-    font-weight: bold;
-    color: #FFD700;
-}
-
-.new-tag {
-    font-family: 'The Seasons', serif;
-    font-size: 1.7em;
-    color: #FFD700;
-}
-
-/* Buttons */
 .big-button {
-    background-color: #870000;
-    color: white;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.2em; /* Increased size */
-    margin-top: 10px;
+    font-size: 1.5em;
 }
 
-.booking-box {
-    border: 4px solid #870000;
-    padding: 15px;
-    margin: 15px auto;
-    width: 50%;
-    font-size: 1.2em;
+.animated-dropdown {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
 }
 
-.ticket-box {
-    border: 4px solid #870000;
-    padding: 20px;
-    background-color: #FFD700;
-    color: black;
-    font-size: 1.2em;
+.animated-dropdown.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ticket-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ticket-container img {
+    width: 150px;
 }
