@@ -16,45 +16,45 @@
     <!-- HEADER WITH LOGO -->
     <header>
         <img src="https://i.ibb.co/Qv8qqqkx/logo.png" alt="AC/DC Productions Logo" class="logo">
-        <h1 class="outlined-text big-title">AC/DC Productions</h1>
+        <h1 class="big-title">AC/DC Productions</h1>
         <p class="tagline">It's Your Choice</p>
     </header>
 
     <!-- ABOUT SECTION -->
     <section id="about">
-        <h2 class="outlined-text">About Us</h2>
-        <p class="about-text">
-            AC/DC Productions is a revolutionary theater company that brings **interactive storytelling** to life.
-            Unlike traditional plays, we allow the **audience to decide what happens next**. Each show is a **unique experience** where viewers shape the story in real time.
-            <br><br>
-            Our mission is to **engage, surprise, and immerse audiences** by making them part of the performance. Whether it's a thrilling **murder mystery**, an exciting **kids' adventure**, or a futuristic **sci-fi experience**, every show is dynamic and full of unexpected twists!
-        </p>
+        <h2>About Us</h2>
+        <div class="about-box">
+            <p>
+                AC/DC Productions is a revolutionary theater company that brings interactive storytelling to life.
+                Unlike traditional plays, we allow the audience to decide what happens next. Each show is a unique experience where viewers shape the story in real time.
+                <br><br>
+                Our mission is to engage, surprise, and immerse audiences by making them part of the performance. Whether it's a thrilling murder mystery, an exciting kids' adventure, or a futuristic sci-fi experience, every show is dynamic and full of unexpected twists!
+            </p>
+        </div>
     </section>
 
     <!-- SHOW LISTING -->
     <section id="shows">
-        <h2 class="outlined-text">Upcoming Shows</h2>
+        <h2>Upcoming Shows</h2>
         <div class="show-list">
             <div class="show" onclick="openBooking('The Mystery Night', 'https://i.ibb.co/sdc0zkkc/mystery.jpg')">
-                <div class="image-container">
-                    <img src="https://i.ibb.co/sdc0zkkc/mystery.jpg" alt="Mystery Show">
-                </div>
-                <h3 class="outlined-text">The Mystery Night</h3>
+                <img src="https://i.ibb.co/sdc0zkkc/mystery.jpg" alt="Mystery Show">
+                <h3>The Mystery Night</h3>
                 <p class="price">🎭 Genre: Mystery</p>
                 <p class="price">🎟️ Price: 50 AED (13+), 25 AED (U13)</p>
             </div>
 
             <div class="show" onclick="openBooking('Kids Adventure', 'https://i.ibb.co/vCCFhKx4/kids.jpg')">
                 <img src="https://i.ibb.co/vCCFhKx4/kids.jpg" alt="Kids Adventure">
-                <h3 class="outlined-text">Kids Adventure</h3>
+                <h3>Kids Adventure</h3>
                 <p class="price">🎭 Genre: Family/Kids</p>
                 <p class="price">🎟️ Price: 50 AED (13+), 25 AED (U13)</p>
             </div>
 
             <div class="show" onclick="openBooking('Galactic Dilemma', 'https://i.ibb.co/1fy1wWHs/sci-fi.jpg')">
                 <img src="https://i.ibb.co/1fy1wWHs/sci-fi.jpg" alt="Sci-Fi Show">
-                <h3 class="outlined-text">Galactic Dilemma</h3>
-                <p class="new-tag outlined-text">New!</p>
+                <h3>Galactic Dilemma</h3>
+                <p class="new-tag">New!</p>
                 <p class="price">🎭 Genre: Sci-Fi</p>
                 <p class="price">🎟️ Price: 50 AED (13+), 25 AED (U13)</p>
             </div>
@@ -63,7 +63,7 @@
 
     <!-- BOOKING SECTION -->
     <section id="booking" class="hidden animated-dropdown">
-        <h2 class="outlined-text">Book Your Tickets</h2>
+        <h2>Book Your Tickets</h2>
         <div class="ticket-container">
             <img id="show-image" src="" alt="Show Image">
             <div class="ticket-details">
@@ -91,11 +91,17 @@
         </div>
     </section>
 
+    <!-- SPACE FOR YOUTUBE VIDEO -->
+    <section id="video">
+        <h2>Watch Our Advertisement</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer>
-        <h2 class="outlined-text">Need Support?</h2>
         <p>Email us: <a href="mailto:ACDC.Productions@protonmail.com">ACDC.Productions@protonmail.com</a></p>
-        <p>Follow us on social media for updates!</p>
         <p>📍 Theatre currently available in Dubai. Expanding soon!</p>
         <p>© 2024 AC/DC Productions. All rights reserved.</p>
     </footer>
