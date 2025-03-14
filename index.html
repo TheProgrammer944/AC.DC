@@ -15,7 +15,6 @@
 
     <!-- HEADER WITH LOGO -->
     <header>
-        <!-- Updated logo link -->
         <img src="https://i.ibb.co/Qv8qqqkx/logo.png" alt="AC/DC Productions Logo" class="logo">
         <h1>AC/DC Productions</h1>
         <p class="tagline">It's Your Choice</p>
@@ -24,22 +23,27 @@
     <!-- ABOUT SECTION -->
     <section id="about">
         <h2>About Us</h2>
-        <p>Our plays are interactive! The audience votes for the next action.</p>
+        <p class="about-text">Our Mission is to deliver engaging theatre shows whilst giving the viewer a choice. What's going to happen next?</p>
     </section>
 
     <!-- SHOW LISTING -->
     <section id="shows">
         <h2>Upcoming Shows</h2>
         <div class="show-list">
-            <div class="show" onclick="openBooking('The Mystery Night', 'images/mystery.jpg')">
-                <img src="images/mystery.jpg" alt="Mystery Show">
+            <div class="show" onclick="openBooking('The Mystery Night', 'https://www.qub.ac.uk/events/whats-on/listing/murdermysterynight.html')">
+                <img src="https://www.qub.ac.uk/events/whats-on/listing/murdermysterynight.html" alt="Mystery Show">
                 <h3>The Mystery Night</h3>
-                <p>A thrilling experience where you decide the fate of the characters.</p>
+                <p class="price">🎟️ Price: 50 AED (13+), 25 AED (U13)</p>
             </div>
-            <div class="show" onclick="openBooking('Kids Adventure', 'images/kids.jpg')">
-                <img src="images/kids.jpg" alt="Kids Adventure">
+            <div class="show" onclick="openBooking('Kids Adventure', 'https://www.fastrackids.com/blog/traveling-with-children/')">
+                <img src="https://www.fastrackids.com/blog/traveling-with-children/" alt="Kids Adventure">
                 <h3>Kids Adventure</h3>
-                <p>A fun and interactive journey for children!</p>
+                <p class="price">🎟️ Price: 50 AED (13+), 25 AED (U13)</p>
+            </div>
+            <div class="show" onclick="openBooking('Galactic Dilemma', 'https://www.scientificamerican.com/article/tech-billionaires-need-to-stop-trying-to-make-the-science-fiction-they-grew-up-on-real/')">
+                <img src="https://www.scientificamerican.com/article/tech-billionaires-need-to-stop-trying-to-make-the-science-fiction-they-grew-up-on-real/" alt="Sci-Fi Show">
+                <h3>Galactic Dilemma</h3>
+                <p class="price">🎟️ Price: 50 AED (13+), 25 AED (U13)</p>
             </div>
         </div>
     </section>
@@ -82,18 +86,6 @@
                 <p><strong>Booking Code:</strong> <span id="booking-code"></span></p>
             </div>
         </div>
-    </section>
-
-    <!-- YOUTUBE VIDEO EMBED -->
-    <section id="video">
-        <h2>Watch Our Advertisement</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:ACDC.Productions@protonmail.com">ACDC.Productions@protonmail.com</a></p>
     </section>
 
     <script src="script.js"></script>
