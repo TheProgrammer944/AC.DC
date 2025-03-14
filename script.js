@@ -1,15 +1,10 @@
-// Open the booking section when a show is clicked
-document.querySelectorAll(".show").forEach(show => {
-    show.addEventListener("click", function () {
-        let title = this.getAttribute("data-title");
-        let image = this.getAttribute("data-image");
+function openBooking(title, image) {
+    document.getElementById("selected-show").textContent = "Booking for: " + title;
+    document.getElementById("show-image").src = image;
 
-        document.getElementById("selected-show").textContent = "Booking for: " + title;
-        document.getElementById("show-image").src = image;
-        document.getElementById("booking").classList.add("active");
-        document.getElementById("booking").classList.remove("hidden");
-    });
-});
+    let bookingSection = document.getElementById("booking");
+    bookingSection.classList.add("active");
+}
 
 function calculateTotal() {
     let date = document.getElementById("date").value;
@@ -31,11 +26,4 @@ function generateTicket() {
     let bookingCode = Math.random().toString(36).substring(2, 10).toUpperCase();
     document.getElementById("booking-code").textContent = bookingCode;
     document.getElementById("ticket-summary").classList.remove("hidden");
-
-    document.getElementById("ticket-details").innerHTML = `
-        <strong>${document.getElementById("selected-show").textContent}</strong><br>
-        Date: ${document.getElementById("date").value}<br>
-        Time: ${document.getElementById("time").value}<br>
-        Total Price: ${document.getElementById("total-price").textContent}
-    `;
 }
