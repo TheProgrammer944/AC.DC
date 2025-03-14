@@ -1,7 +1,7 @@
 function openBooking(title, image) {
     document.getElementById("selected-show").textContent = "Booking for: " + title;
     document.getElementById("show-image").src = image;
-    
+
     let bookingSection = document.getElementById("booking");
     bookingSection.classList.add("active");
 }
