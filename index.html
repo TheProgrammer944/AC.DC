@@ -16,7 +16,7 @@
     <!-- HEADER WITH LOGO -->
     <header>
         <img src="https://i.ibb.co/Qv8qqqkx/logo.png" alt="AC/DC Productions Logo" class="logo">
-        <h1 class="outlined-text">AC/DC Productions</h1>
+        <h1 class="outlined-text big-title">AC/DC Productions</h1>
         <p class="tagline">It's Your Choice</p>
     </header>
 
@@ -47,7 +47,7 @@
             <div class="show" onclick="openBooking('Galactic Dilemma', 'https://i.ibb.co/1fy1wWHs/sci-fi.jpg')">
                 <img src="https://i.ibb.co/1fy1wWHs/sci-fi.jpg" alt="Sci-Fi Show">
                 <h3 class="outlined-text">Galactic Dilemma</h3>
-                <p class="new-tag">New!</p>
+                <p class="new-tag outlined-text">New!</p>
                 <p class="price">🎭 Genre: Sci-Fi</p>
                 <p class="price">🎟️ Price: 50 AED (13+), 25 AED (U13)</p>
             </div>
@@ -55,41 +55,31 @@
     </section>
 
     <!-- BOOKING SECTION -->
-    <section id="booking" class="hidden">
+    <section id="booking" class="hidden animated-dropdown">
         <h2 class="outlined-text">Book Your Tickets</h2>
-        <p id="selected-show"></p>
-        <img id="show-image" src="" alt="Show Image">
-
-        <div class="booking-box">
-            <label for="date">Choose Date:</label>
-            <input type="date" id="date">
-        </div>
-
-        <div class="booking-box">
-            <label for="time">Choose Time:</label>
-            <input type="time" id="time" min="10:00" max="22:00">
-        </div>
-
-        <div class="booking-box">
-            <label for="adults">Number of People 13+:</label>
-            <input type="number" id="adults" value="0" min="0">
-        </div>
-
-        <div class="booking-box">
-            <label for="kids">Number of People Under 13:</label>
-            <input type="number" id="kids" value="0" min="0">
-        </div>
-
-        <button class="big-button" onclick="calculateTotal()">Calculate Price</button>
-        <p id="total-price"></p>
-
-        <button class="big-button hidden" id="get-ticket-btn" onclick="generateTicket()">Get Your Ticket</button>
-
-        <div id="ticket" class="hidden">
-            <h2 class="outlined-text">Your Ticket</h2>
-            <div class="ticket-box">
-                <p id="ticket-details"></p>
-                <p><strong>Booking Code:</strong> <span id="booking-code"></span></p>
+        <div class="ticket-container">
+            <img id="show-image" src="" alt="Show Image">
+            <div class="ticket-details">
+                <p id="selected-show"></p>
+                <div class="booking-box">
+                    <label for="date">Choose Date:</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="booking-box">
+                    <label for="time">Choose Time:</label>
+                    <input type="time" id="time" min="10:00" max="22:00">
+                </div>
+                <div class="booking-box">
+                    <label for="adults">Number of People 13+:</label>
+                    <input type="number" id="adults" value="0" min="0">
+                </div>
+                <div class="booking-box">
+                    <label for="kids">Number of People Under 13:</label>
+                    <input type="number" id="kids" value="0" min="0">
+                </div>
+                <button class="big-button" onclick="calculateTotal()">Calculate Price</button>
+                <p id="total-price"></p>
+                <button class="big-button hidden" id="get-ticket-btn" onclick="generateTicket()">Get Your Ticket</button>
             </div>
         </div>
     </section>
