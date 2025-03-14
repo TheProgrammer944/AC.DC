@@ -13,14 +13,14 @@
 </head>
 <body>
 
-    <!-- HEADER -->
+    <!-- HEADER WITH LOGO -->
     <header>
         <img src="https://i.ibb.co/Qv8qqqkx/logo.png" alt="AC/DC Productions Logo" class="logo">
         <h1 class="big-title">AC/DC Productions</h1>
         <p class="tagline">It's Your Choice</p>
     </header>
 
-    <!-- ABOUT US SECTION -->
+    <!-- ABOUT SECTION -->
     <section id="about">
         <h2>About Us</h2>
         <div class="about-box">
@@ -33,25 +33,25 @@
         </div>
     </section>
 
-    <!-- SPACED OUT "UPCOMING SHOWS" SECTION -->
+    <!-- SHOW LISTING -->
     <section id="shows">
         <h2>Upcoming Shows</h2>
         <div class="show-list">
-            <div class="show" data-title="The Mystery Night" data-image="https://i.ibb.co/sdc0zkkc/mystery.jpg">
+            <div class="show" onclick="openBooking('The Mystery Night', 'https://i.ibb.co/sdc0zkkc/mystery.jpg')">
                 <img src="https://i.ibb.co/sdc0zkkc/mystery.jpg" alt="Mystery Show">
                 <h3>The Mystery Night</h3>
                 <p class="price">🎭 Genre: Mystery</p>
                 <p class="price">🎟️ Price: 50 AED (13+), 25 AED (U13)</p>
             </div>
 
-            <div class="show" data-title="Kids Adventure" data-image="https://i.ibb.co/vCCFhKx4/kids.jpg">
+            <div class="show" onclick="openBooking('Kids Adventure', 'https://i.ibb.co/vCCFhKx4/kids.jpg')">
                 <img src="https://i.ibb.co/vCCFhKx4/kids.jpg" alt="Kids Adventure">
                 <h3>Kids Adventure</h3>
                 <p class="price">🎭 Genre: Family/Kids</p>
                 <p class="price">🎟️ Price: 50 AED (13+), 25 AED (U13)</p>
             </div>
 
-            <div class="show" data-title="Galactic Dilemma" data-image="https://i.ibb.co/1fy1wWHs/sci-fi.jpg">
+            <div class="show" onclick="openBooking('Galactic Dilemma', 'https://i.ibb.co/1fy1wWHs/sci-fi.jpg')">
                 <img src="https://i.ibb.co/1fy1wWHs/sci-fi.jpg" alt="Sci-Fi Show">
                 <h3>Galactic Dilemma</h3>
                 <p class="new-tag">New!</p>
@@ -98,11 +98,19 @@
         </div>
     </section>
 
+    <!-- SPACE FOR YOUTUBE VIDEO -->
+    <section id="video">
+        <h2>Watch Our Advertisement</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer>
         <p>Email us: <a href="mailto:ACDC.Productions@protonmail.com">ACDC.Productions@protonmail.com</a></p>
         <p>📍 Theatre currently available in Dubai. Expanding soon!</p>
-        <p>© 2024 AC/DC Productions. All rights reserved.</p>
+        <p>© 2025 AC/DC Productions. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
