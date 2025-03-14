@@ -37,5 +37,23 @@ function calculateTotal() {
 function generateTicket() {
     let bookingCode = Math.random().toString(36).substring(2, 10).toUpperCase();
     document.getElementById("booking-code").textContent = bookingCode;
+
+    let showName = document.getElementById("selected-show").textContent.replace("Booking for: ", "");
+    let date = document.getElementById("date").value;
+    let time = document.getElementById("time").value;
+    let adults = parseInt(document.getElementById("adults").value);
+    let kids = parseInt(document.getElementById("kids").value);
+    let total = (adults * 50) + (kids * 25);
+
+    let summaryText = `
+        <strong>Show:</strong> ${showName} <br>
+        <strong>Date:</strong> ${date} <br>
+        <strong>Time:</strong> ${time} <br>
+        <strong>Number of People (13+):</strong> ${adults} <br>
+        <strong>Number of People (U13):</strong> ${kids} <br>
+        <strong>Total Price:</strong> ${total} AED
+    `;
+
+    document.getElementById("ticket-details").innerHTML = summaryText;
     document.getElementById("ticket-summary").classList.remove("hidden");
 }
