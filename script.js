@@ -24,5 +24,6 @@ function calculateTotal() {
 
 function generateTicket() {
     let bookingCode = Math.random().toString(36).substring(2, 10).toUpperCase();
-    alert("Your booking code is: " + bookingCode);
+    document.getElementById("booking-code").textContent = bookingCode;
+    document.getElementById("ticket-summary").classList.remove("hidden");
 }
