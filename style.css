@@ -12,12 +12,7 @@ header {
     padding: 20px;
 }
 
-.logo {
-    width: 300px;  /* Adjust size */
-    height: auto;
-    display: block;
-    margin: 20px auto; /* Centers the logo */
-}
+
 
 h1 {
     font-size: 2.5em;
